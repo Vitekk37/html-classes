@@ -1,0 +1,19 @@
+.green-normal{
+    color: green;
+    font-weight: normal;
+}
+
+.green-bold{
+    color: green;
+    font-weight: bold;
+}
+
+.yellow{
+    color: rgb(255, 217, 0);
+}
+
+.purple{
+    color: purple;
+    font-style: italic;
+   
+}
