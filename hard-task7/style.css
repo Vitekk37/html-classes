@@ -1,0 +1,12 @@
+body{
+    font-size: 30px;
+}
+.text{
+    color: rgb(245, 220, 0);
+    background-color:rgb(225, 240, 241);
+}
+.author{
+    color: rgb(15, 214, 15);
+    background-color: rgb(225, 240, 241);
+    padding-left:20px;
+}
