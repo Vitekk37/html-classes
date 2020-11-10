@@ -1,0 +1,15 @@
+table{
+    margin: 0 auto;
+}
+table, td, th{
+    border: 1px solid black;
+    width: 400px;
+}
+
+td{
+    text-align: left;
+}
+
+tr:last-of-type td:last-of-type{
+    text-align: center;
+}
