@@ -1,15 +1,3 @@
-.spring{
-    color: green;
-}
-
-.summer{
-    color: red;
-}
-
-.autumn{
-    color: yellow;
-}
-
 li:nth-child(2){
     color: green;
 }
