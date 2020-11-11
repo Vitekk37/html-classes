@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form action="/" method="POST">
+    <label for="email">Ваш логин(email):</label>
+    <input class="form-input" type="email" name="email" id="email">
+
+    <label for="password">Пароль:</label>
+    <input class="form-input" type="password" name="password" id="password">
+
+    <label for="text">Информация о себе:</label>
+    <textarea class="form-input" name="text" id="text" cols="22"></textarea>
+     
+    <input class="checkbox" type="checkbox" id="checkbox">
+    <label  for="checkbox">Подписаться на рассылку</label>
+
+    <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>
