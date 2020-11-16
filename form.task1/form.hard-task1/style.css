@@ -1,0 +1,67 @@
+*, *::after{
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+}
+.form{
+    width:448px ;
+    height: 282px;
+    margin:0 auto;
+    background-color: rgb(72, 184, 212);
+    
+   
+    
+}
+
+.form-title{
+    font-weight: normal;
+    color: white;
+}
+
+td{
+    border-bottom: 1px solid white;
+    width: 448px;
+    padding-bottom: 15px;
+    padding-top:20px;
+    padding-left: 25px;
+    padding-right:60px;
+}
+
+
+
+.email{
+    width: 320px;
+    margin-bottom: 25px;
+    
+    
+}
+.form-input{
+    border:none;
+}
+
+label{
+    display: block;
+    color: white;
+    font-size: 18px;
+}
+
+.pass{
+    margin-right: 20px;
+}
+.password {
+    width: 150px;
+}
+.pass-repeat{
+    width: 150px;
+}
+
+.password-form{
+    display: flex;
+    
+}
+button{
+    background-color: rgb(255, 238, 5);
+    margin-top: 30px;
+    padding: 5px;
+}
