@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Форма регистрации</legend>
+            <label for="first-name">Введите ваше имя:</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Ваше имя"> 
+
+            <label for="second-name">Введите вашу фамилию:</label>
+            <input type="text" name="first-name" id="second-name" placeholder="Ваша фамилия">
+
+            <label for="male">Укажите ваш пол:</label> 
+            <p><input type="radio" name="male" checked>Муж</p>
+            <p><input type="radio" name="male">Жен</p>
+            
+            <label for="lang">Какими языками вы владеете?</label>
+            <p><input type="checkbox" name="lang" value="russian">Русский</p>
+            <p><input type="checkbox" name="lang" value="belarusian">Беларуский</p>
+            <p><input type="checkbox" name="lang" value="english">Английский</p> 
+            
+            <label for="country">Выберите страну проживания:</label>
+            <select name="country" id="country">
+                <option value="">Россия</option>
+                <option value="">Беларусь</option>
+                <option value="">Украина</option>
+                <option value="">Литва</option>
+                <option value="">Латвия</option>
+                <option value="">Польша</option>
+                <option value="">Гравити Фолз</option>
+            </select>
+            <button type="submit">Отправить фото</button>
+        </fieldset>
+        <button type="submit">Отправить анкету</button>
+        
+    </form>
+    
+</body>
+</html>
