@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Post No Bills Jaffna';
+    src: url('../fonts/PostNoBillsJaffna-Bold.woff2') format('woff2'),
+        url('../fonts/PostNoBillsJaffna-Bold.woff') format('woff'),
+        url('../fonts/PostNoBillsJaffna-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: local('PT Sans Caption Regular'), local('PT-Sans-Caption-Regular'),
+        url('../fonts/PTSans-Caption.woff2') format('woff2'),
+        url('../fonts/PTSans-Caption.woff') format('woff'),
+        url('../fonts/PTSans-Caption.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Playfair Display Regular';
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Playfair Display Bold';
+    src: url('../fonts/PlayfairDisplay-Bold.eot');
+    src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
