@@ -1,21 +1,679 @@
-$text_color: blue
-=box
-    width: 250px
-    height: 200px
-    background-color: red
+// @import sass\_media.sass
+
+*, *::after, *::before
+  margin: 0
+  box-sizing: border-box
+
+body
+  margin: 0
+  line-height: 21px
+  color: #fff
+.wrap
+  width: 100%
+  min-height: 100%
+  overflow: hidden
+  
+.container
+  max-width: 1140px
+  padding: 0 15px
+  margin: 0 auto
+  width: 100%
+.fix_block
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 100
+.subheader 
+  padding: 15px 0
+  background-color: #000
+  position: relative
+  &_inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &_phone
+    border-right: 1px solid #969696
+    padding-right: 14px
+    position: relative
+    i.fas
+      color: inherit
+      content: ''
+      position: absolute
+      left: -25px
+      top: 6px
+  a
+    text-decoration: none
+    color: #969696
+    font-size: 12px
+    line-height: 16px
+    font-family: 'PT Sans Caption'
+   
+
+    
+  .info_wrapper
+    display: flex
+    align-items: center
+
+  &_time
+    padding-left: 14px
+    color: #969696
+    font-size: 12px
+    line-height: 16px
+    font-family: 'PT Sans Caption'   
+  &_reg
+    color: #969696
+    font-size: 12px
+    line-height: 16px
+    font-family: 'PT Sans Caption'
+    position: relative
+    i.fas
+      color: #fff
+      font-size: 14px
+      content: ''
+      position: absolute
+      left: -25px
+      top: 1px
+  
+  &_info
+    border-right: 1px solid #969696
+    padding: 0 10px    
+    color: #969696
+    font-size: 12px
+    line-height: 16px
+    font-family: 'PT Sans Caption'  
+
+.header
+  background: #0f0f0f
+  
+  &_inner
+    height: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &_logo
+    font-family: 'Post No Bills Jaffna'
+    font-weight: 700
+    font-size: 36px
+    text-transform: uppercase
+  nav
+    position: relative
+    .menu_item
+      display: inline
+      &:nth-child(3)
+        margin-right: 20px
+      &:last-child
+        &:hover
+          background-color: none        
+      a
+        text-transform: uppercase
+        padding: 32px 20px 30px
+        font-size: 14px
+        line-height: 18px
+        color: #969696
+        font-family: 'PT Sans Caption'
+        text-decoration: none
+        transition: .4s 
+        &:hover
+          background-color: #1F1F1F
+          color: #ffffff
+        i.fas
+          color: white
+          font-size: 16px
+.burger
+  display: none        
+.promo
+  padding: 160px 0 154px
+  background: url(../img/main_bg.png) center/cover no-repeat
+  &_inner
+    margin: 0 auto
+    text-align: center
+    max-width: 730px
+  &_logo
+    border: 4px solid #fff
+    margin: 0 auto
+    max-width: 320px
+    min-height: 320px
+    
+    
+  &_title
+    font-family: 'Post No Bills Jaffna'
+    text-transform: uppercase
+    font-size: 64px
     display: block
-h1
-    color: $text_color
-    +box
-p
-    color: $text_color    
-.block
-    background-color: #121212
-    h3
-        font-size: 15px
-        color: $text_color
-    &-color
-        background-color: $text_color
-        button
-            +box
-                
+    margin-top: 50%
+    transform: translateY(-50%)
+   
+    
+  .title_divider
+    border: 1px solid #FFFFFF
+    width: 179px
+    display: block
+    margin: 0 auto
+    margin-top: 4px
+
+  &_subtitle
+    margin-top: 7px
+    font-family: 'PT Sans Caption'
+    font-size: 22px
+    line-height: 28px
+    text-align: center
+    text-transform: uppercase
+  
+  &_subtext
+    font-family: 'PT Sans Caption'
+    font-size: 16px
+    line-height: 150%
+    text-align: center
+    text-transform: uppercase
+    margin-top: 80px
+
+.season
+  display: flex
+  &_left
+    flex: 1 0 54.166%
+    padding: 93px 0 73px
+    background-color: #000
+    
+    &_title
+      font-family: 'Playfair Display Bold'
+      font-size: 36px
+      line-height: 48px
+      font-weight: 700
+      padding-bottom: 40px
+      text-align: center
+      text-transform: uppercase
+      position: relative
+      &::after
+        content: ""
+        position: absolute
+        height: 1px
+        width: 120px
+        background-color: #fff
+        left: 50%
+        transform: translateX(-50%) 
+        bottom: 0
+    &_items
+      display: flex
+      margin: 50px 55px 0
+      &_item
+        padding: 0 25px 25px
+        img
+          max-width: 100%
+          vertical-align: top
+          background-color: #191B1C
+          padding: 55px 22px
+        .item__title
+          font-size: 18px
+          line-height: 24px
+          display: block
+          padding-top: 25px
+          font-family: 'Playfair Display Regular'
+          color: #ffffff
+          text-decoration: none
+        .item__price
+          font-family: 'Playfair Display Regular'
+          padding-top: 10px
+          font-size: 16px
+          line-height: 21px
+          font-weight: 700
+          color: #d0d0d0
+
+  &_right
+    width: 100%
+    background: url(../img/man_on_the_chair.png) 0 0/cover no-repeat
+    position: relative
+    &_inner
+      position: absolute
+      left: 50%
+      transform: translateX(-50%) 
+      bottom: 100px
+      text-align: center
+    &_title
+      font-family: 'Playfair Display Bold'
+      font-size: 36px
+      line-height: 48px
+      font-weight: 700
+      padding-bottom: 40px
+      text-align: center
+      text-transform: uppercase
+      position: relative
+      &::after
+        content: ""
+        position: absolute
+        height: 1px
+        width: 120px
+        background-color: #fff
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+    &_btn
+        padding: 12px 28px
+        border: 1px solid #fff
+        text-align: center
+        display: inline-block
+        margin-top: 42px
+        font-family: 'PT Sans Caption'
+        font-size: 18px
+        line-height: 23px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #ffffff
+        text-decoration: none
+        transition: 0.5s all
+        &:hover
+          border-color: #000
+          background-color: #000
+
+.collection
+  display: flex
+  &_left
+    width: 100%
+    background: url(../img/man_with_the_bow_tie.png) 0 0/cover no-repeat
+  &_right
+    flex: 1 0 54.166%
+    padding: 100px 0
+    text-align: center
+    background-color: #000
+  &_right_title
+    font-family: 'Playfair Display Regular'
+    font-size: 36px
+    line-height: 48px
+    font-weight: 700
+    padding-bottom: 40px
+    text-align: center
+    text-transform: uppercase
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      height: 1px
+      width: 120px
+      background-color: #fff
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 0
+  &_right_descr
+    max-width: 472px
+    margin: 0 auto
+    margin-top: 40px
+    font-family: 'Playfair Display Regular'
+    font-size: 14px
+    line-height: 150%
+    text-align: center
+  &_right_btn
+    display: inline-block
+    margin-top: 60px
+    padding: 12px 28px
+    font-size: 18px
+    line-height: 23px
+    letter-spacing: .1em
+    text-transform: uppercase
+    border: 1px solid #fff
+    text-align: center
+    transition: all .5s 
+    color: #ffffff
+    text-decoration: none
+    font-family: 'PT Sans Caption'
+    &:hover
+      background-color: #0F0F0F
+      border-color: #0F0F0F  
+      
+.arrival
+  padding: 120px 0 110px
+  background-color: #000
+  &_title
+    font-family: 'Playfair Display Bold'
+    font-size: 36px
+    line-height: 48px
+    padding-bottom: 40px
+    text-align: center
+    text-transform: uppercase
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      height: 1px
+      width: 120px
+      background-color: #fff
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 0
+  &_inner
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin: 0 -11px
+    margin-top: 80px
+  &_item
+    padding: 0 11px
+    padding-bottom: 40px
+    img
+      max-width: 100%
+      vertical-align: top
+      background-color: #191B1C
+      
+    .item__title
+      font-size: 18px
+      line-height: 24px
+      display: block
+      padding-top: 25px
+      font-family: 'Playfair Display Regular'
+      color: #ffffff
+      text-decoration: none
+    .item__price
+      font-family: 'Playfair Display Regular'
+      padding-top: 10px
+      font-size: 16px
+      line-height: 21px
+      font-weight: 700
+      color: #d0d0d0
+
+.brands
+  background: #0f0f0f
+  padding: 60px 0 80px 
+  &_inner
+    display: flex
+    margin: 0 auto
+  &_item
+    padding: 0 15px
+  &_title
+    font-family: 'Playfair Display Bold'
+    font-size: 36px
+    line-height: 48px
+    padding-bottom: 40px
+    text-align: center
+    text-transform: uppercase
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      height: 1px
+      width: 120px
+      background-color: #fff
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 0
+
+     
+.footer_top
+    background: url(../img/bottom_bg.png) center/cover no-repeat
+    padding: 60px 0 100px
+    .footer_inner
+      display: flex
+    .footer_info
+      flex: 0 0 33.333%   
+      &_title
+        font-family: 'Playfair Display Regular'
+        font-size: 24px
+        line-height: 32px
+        text-transform: uppercase
+        margin-bottom: 40px
+      &_text
+        font-family: 'PT Sans Caption'
+        font-size: 14px
+        line-height: 150%
+    .footer_category
+      width: 100%
+      padding: 0 30px
+      ul
+        li
+          list-style-type: none
+      &_title
+        font-family: 'Playfair Display Regular'
+        font-size: 24px
+        line-height: 32px
+        text-transform: uppercase
+        margin-bottom: 40px   
+      &_list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -48px
+      &_item
+        padding: 0 5px
+        margin-bottom: 20px
+      &_link
+        display: inline-block
+        font-family: 'PT Sans Caption'
+        font-size: 14px
+        line-height: 150%
+        padding: 10px 20px
+        color: #d0d0d0
+        background: #0f0f0f
+        text-decoration: none
+        transition: all .3s 
+        &:hover
+          background-color: #191B1C
+       
+   
+.footer_form
+    &_title
+      font-family: 'Playfair Display Regular'
+      font-size: 24px
+      line-height: 32px
+      text-transform: uppercase
+      margin-bottom: 40px  
+    &_text
+      font-family: 'PT Sans Caption'
+      font-size: 14px
+      line-height: 150%
+    &_inner
+      height: 40px
+      margin-top: 35px
+      display: flex
+    &_input
+      background: rgba(255,255,255, .2)
+      height: 100%
+      padding: 0 15px
+      max-width: 210px
+      color: white
+      outline: none
+      border: 0
+      
+      
+
+    &_btn
+      background: #0f0f0f
+      font-family: 'PT Sans Caption'
+      color: #fff
+      font-size: 14px
+      letter-spacing: .05em
+      text-transform: uppercase
+      height: 100%
+      padding: 0 20px
+      cursor: pointer
+      outline: none
+      border: 0
+    
+    
+
+.footer_bottom
+  padding: 17px 0
+  background: #0f0f0f    
+  .footer_copy
+    color: #d0d0d0  
+    font-family: 'PT Sans Caption'
+    font-size: 12px
+
+
+@media (max-width: 1300px)
+  .season_left_items
+    flex-wrap: wrap
+    &_item
+      flex: 0 0 50%
+  .season_right_inner
+    bottom: 40%
+  
+@media (max-width: 1024px)
+  .brands_inner
+    flex-wrap: wrap
+    .brands_item
+      margin: 0 auto
+    
+  .season_left_items
+    flex-wrap: wrap
+    &_item
+      flex: 0 0 50%
+  .collection
+    flex-direction: column
+  .collection_left
+    padding: 150px 0
+    order: 1    
+  .footer_category
+    margin: 0px -22px
+  .season_right_inner
+    bottom: 40%
+ 
+
+
+  
+  
+@media (max-width: 767px)
+  
+  .header_inner
+    height: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center  
+  .subheader_info, .subheader_time
+    display: none
+  .subheader_phone
+    border: none
+    i.fas
+      display: none
+  .burger
+    display: block
+    position: absolute
+    right: 10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 20px
+    height: 12px
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #fff
+      margin-bottom: 2px
+      transition: 0.5s all
+    &_active
+      span
+        margin-bottom: -2px
+        &:first-child
+          transform: translateY(3px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:last-child
+          transform: translateY(3px) rotate(45deg)
+  .menu
+    position: fixed
+    top: 0px
+    left: -100%
+    width: 50%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background-color: rgba(0, 0, 0, .8)
+    transition: 0.6s
+    &_active
+      left: 0
+  .menu_item
+    margin-top: 30px
+    padding-right: 0
+  .header nav .menu_item a
+    font-size: 20px
+    padding-left: 5px
+    &:hover
+      background-color: none
+      
+      
+           
+  .collection
+    flex-direction: column
+  .collection_left
+    padding: 150px 0
+    order: 1
+  .season
+    flex-direction: column
+  .season_left_items
+    &_item
+      flex: 0 0 33%
+  .season_right
+    order: 1
+    padding: 150px 0
+    &_inner
+      bottom: 25%
+  
+  .footer_inner
+    flex-direction: column
+    text-align: center
+    align-items: center
+    .footer_info
+      flex: 0 0 100%
+      margin-bottom: 30px
+    .footer_category 
+      margin: 0px -30px
+      margin-bottom: 10px
+      &_list
+        margin: 0 auto
+      
+    .footer_form_inner
+      flex-direction: column
+      
+      .footer_form_input
+        max-width: none
+        padding: 15px 20px
+    .footer_form_btn
+      padding: 15px 20px
+      width: 209px
+
+@media (max-width: 480px)
+  .header_logo
+    display: block
+    font-size: 30px
+  .header nav .menu_item a
+    font-size: 13px
+    padding-left: 0px
+  .promo
+    padding: 140px 0 90px
+  .promo_logo
+    padding: 50px 30px
+    min-height: 220px
+    .promo_title
+      margin-top: 15%
+  .season_left
+    padding: 45px 0 40px   
+  .season_left_items
+    flex-wrap: wrap
+    &_item
+      flex: 0 0 100%
+      margin-bottom: 20px
+      .item__title
+        padding-top: 5px
+        text-align: center
+      .item__price
+        padding-top: 0
+        text-align: center
+  .season_right_inner
+    bottom: 18%
+  .collection_right
+    padding: 60px 0px
+  .arrival
+    padding: 0
+    padding-top: 65px  
+    &_inner
+      margin: 0
+      margin-top: 50px 
+      .item__title
+        padding-top: 5px
+        text-align: center
+      .item__price
+        padding-top: 0
+        text-align: center
+
+@media (max-width: 360px)
+  .header nav .menu_item a
+    font-size: 10px
+    padding-left: 0px

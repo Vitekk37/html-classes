@@ -15,3 +15,5 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+let answer = confirm("Вам есть 18?");
