@@ -505,6 +505,7 @@ body
     bottom: 40%
   
 @media (max-width: 1024px)
+
   .brands_inner
     flex-wrap: wrap
     .brands_item
@@ -519,16 +520,36 @@ body
   .collection_left
     padding: 150px 0
     order: 1    
-  .footer_category
-    margin: 0px -22px
+  .footer_inner
+    display: none
+    flex-direction: column
+    text-align: center
+    align-items: center
+    .footer_info
+      flex: 0 0 100%
+      margin-bottom: 30px
+    
+      &_list
+        margin: 0 auto
+    .footer_form_inner
+      flex-direction: column
+      
+      .footer_form_input
+        max-width: none
+        padding: 15px 20px
+    .footer_form_btn
+      padding: 15px 20px
+      width: 209px
+    
+
   .season_right_inner
     bottom: 40%
- 
+  
 
 
   
   
-@media (max-width: 767px)
+@media (max-width: 768px)
   
   .header_inner
     height: 80px
@@ -600,6 +621,9 @@ body
   .season_left_items
     &_item
       flex: 0 0 33%
+      img
+        padding: 10px
+        
   .season_right
     order: 1
     padding: 150px 0
@@ -677,3 +701,5 @@ body
   .header nav .menu_item a
     font-size: 10px
     padding-left: 0px
+  .collection_right_descr
+    padding: 0px 20px
